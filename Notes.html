@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> Notes</h1>
+            <form action="">
+                <input type="text" id="note-title" placeholder="Title">
+                <textarea id="note-text" placeholder="Notes"></textarea>
+            
+                <button id="add-btn">Add Note</button>
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>My Notes</h2>
+            <hr>
+            <div id="notes">
+        
+                    <div class="note">
+                        <p class="note-counter">Note ${index + 1}</p>
+                        <h3 class="note-title"> $element.title </h3>
+                        <p class="note-text"> $element.text</p>
+                        <button class="note-btn">Delete Note</button>
+                        <button class="notr-btn edit-btn">Edit Note</button>
+                        <h6 class="date">created on ${date} </h6>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="comment.js"></script>
+</body>
+</html>
